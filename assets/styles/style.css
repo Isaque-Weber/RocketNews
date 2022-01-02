@@ -1,0 +1,101 @@
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #bebebe;
+    --bg-button-color: #8257e5;
+}
+
+
+/* Resete dos navegadores */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../images/read_news.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+.content {
+    background: var(--body-bg-color);
+    width: 50%;
+    height: 100vh;
+    padding: 35px;
+}
+
+.title,
+.subtitle,
+.text,
+a {
+    font-family: spartan, work Sans;
+}
+
+.title {
+    color: var(--title-color);
+    font-weight: 700;
+}
+
+.subtitle {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.text {
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.logo {
+    margin-bottom: 150px;
+    width: 389px;
+    height: 94px;
+}
+
+.e-mail {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    width: 798px;
+}
+
+form {
+    width: 55vw;
+    display: flex;
+    box-shadow: 7px 7px 10px 6px #121214ad;
+}
+
+form::before {
+    content: "";
+    width: 5px;
+    height: 50px;
+    background: var(--title-color);
+}
+
+.input {
+    width: 55vw;
+    height: 50px;
+    border: none;
+    padding: 0 10px;
+    outline: none;
+}
+
+.submit {
+    background: var(--bg-button-color);
+    width: 45px;
+    height: 50px;
+    fill: #bebebe;
+    padding: 8px;
+}
+
+a {
+    color: var(--bg-button-color);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+}
